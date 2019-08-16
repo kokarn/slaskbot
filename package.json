@@ -1,0 +1,25 @@
+{
+  "name": "slaskbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config index.js",
+    "start": "node index.js",
+    "build": "docker build -t home.kokarn.com:5000/slaskbot:latest .",
+    "postbuild": "docker push home.kokarn.com:5000/slaskbot:latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "feedparser": "^2.2.9",
+    "got": "^9.6.0",
+    "node-telegram-bot-api": "^0.30.0",
+    "tiny-human-time": "^1.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "nodemon": "^1.19.1"
+  }
+}
