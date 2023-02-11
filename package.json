@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "feedparser": "^2.2.9",
-    "got": "^9.6.0",
+    "got": "^12.5.3",
     "node-telegram-bot-api": "^0.30.0",
     "tiny-human-time": "^1.2.0"
   },
